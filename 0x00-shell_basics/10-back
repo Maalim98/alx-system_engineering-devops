@@ -1,3 +1,2 @@
-#!/bash/bin
-cd .
-
+#!/bin/bash
+cd -
