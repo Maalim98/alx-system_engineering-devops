@@ -16,8 +16,8 @@ frontend frontend_http
 backend backend_http
     mode http
     balance roundrobin
-    server 199597-web-01 100.26.221.215:80 check
-    server 199597-web-02 54.84.99.123:80 check
+    server 199597-web-01 100.26.221.215 check
+    server 199597-web-02 54.84.99.123 check
 " | sudo tee /etc/haproxy/haproxy.cfg > /dev/null
 
 # ascertain that HAproxy can be managed via an init script; start
